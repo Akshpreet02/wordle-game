@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Wordle</h1>
+        <div>
+            <div class="help" id="background-icon">&#9681</div>
+            <div class="help" id="hint-icon">&#63</div>
+            <div class="help" id="info-icon">&#9432</div>
+        </div>
+    </div>
+
+    <div id="game-info">
+        <ul id="game-info-list">
+          <p>Instructions for Wordle</p>
+          <li>Start typing. The Letters will appear in the boxes</li>
+          <li>Remove letters with Backspace</li>
+          <li>Hit Enter/Return to submit an answer</li>
+          <li>Letters with green background are in the right spot</li>
+          <li>Letters with yellow background exist in the word, but are in the wrong spots</li>
+          <li>Letters with gray background do not exist in the word</li>
+          <li>If you need a hint, click the &#63 icon.</li>
+        </ul>
+    </div>
+
+   <div class="words">
+        <div class="words-container">
+			<div class="word-row">
+				<input type="text" name="word" id="word" maxlength="1">
+                <input type="text" name="word" id="word" maxlength="1">
+                <input type="text" name="word" id="word" maxlength="1">
+                <input type="text" name="word" id="word" maxlength="1">
+            </div>
+            <div class="word-row">
+                <input type="text" name="word" id="word" maxlength="1">
+                <input type="text" name="word" id="word" maxlength="1">
+                <input type="text" name="word" id="word" maxlength="1">
+                <input type="text" name="word" id="word" maxlength="1">
+            </div>
+            <div class="word-row">
+                <input type="text" name="word" id="word" maxlength="1">
+                <input type="text" name="word" id="word" maxlength="1">
+                <input type="text" name="word" id="word" maxlength="1">
+                <input type="text" name="word" id="word" maxlength="1">
+            </div>
+            <div class="word-row">
+                <input type="text" name="word" id="word" maxlength="1">
+                <input type="text" name="word" id="word" maxlength="1">
+                <input type="text" name="word" id="word" maxlength="1">
+                <input type="text" name="word" id="word" maxlength="1">
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="keyboard">
+        <div class="keyboard-container">
+          <div>
+            <p class="lost-message"></p>
+          </div>
+          <div class="start-button">
+            <button id="start_over">Start Over</button>
+          </div>
+
+		  <p class="hint_word"></p>
+        </div>
+    </div>
+
+   
+    <footer>
+        © Akshpreet Singh 2023
+    </footer>
+
+    <script src="wordle.js"></script>
+</body>
+</html>
